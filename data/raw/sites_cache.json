@@ -1,0 +1,12 @@
+{
+  "OpenAI": "OpenAI is an AI research and deployment company known for the GPT model family and ChatGPT.",
+  "Anthropic": "Anthropic is an AI safety and research company that builds the Claude family of AI models.",
+  "Mistral AI": "Mistral AI is a French AI company building open-weight and commercial large language models.",
+  "Hugging Face": "Hugging Face is a platform and community hub for sharing machine learning models, datasets, and applications.",
+  "Figure AI": "Figure AI is a robotics company developing general-purpose humanoid robots.",
+  "Boston Dynamics": "Boston Dynamics is a robotics company known for advanced mobile and humanoid robots including Atlas and Spot.",
+  "Stability AI": "Stability AI is the company behind the Stable Diffusion family of open image-generation models.",
+  "DeepSeek": "DeepSeek is a Chinese AI research lab known for its open-weight large language models.",
+  "Black Forest Labs": "Black Forest Labs is an AI company focused on generative image and video models, including the FLUX model family.",
+  "Qwen": "Qwen is Alibaba Cloud's large language model family, released with open weights across multiple sizes."
+}

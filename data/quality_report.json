@@ -1,0 +1,47 @@
+{
+  "total_entities": 271,
+  "total_relationships": 79,
+  "entities_by_type": {
+    "MCP": 52,
+    "Repository": 128,
+    "Model": 18,
+    "Tool": 2,
+    "Collection": 2,
+    "Video": 13,
+    "News": 22,
+    "Company": 10,
+    "Task": 24
+  },
+  "entities_by_category": {
+    "MCP": 52,
+    "New/Recently added": 124,
+    "Personal": 36,
+    "Tools": 51,
+    "Repositories": 128,
+    "Creative": 46,
+    "Collections": 15,
+    "Robots": 26,
+    "Devices": 27,
+    "Models": 18,
+    "Videos": 13,
+    "News": 22,
+    "Companies": 10,
+    "Tasks": 24
+  },
+  "entities_by_source": {
+    "GitHub API": 180,
+    "Hugging Face Hub API": 22,
+    "YouTube Data API": 13,
+    "TechCrunch AI": 22,
+    "Official Site": 10,
+    "Hugging Face Task Taxonomy": 24
+  },
+  "relationships_by_predicate": {
+    "provides": 7,
+    "develops": 1,
+    "mentions": 21,
+    "solves": 50
+  },
+  "entities_missing_description": 0,
+  "elapsed_seconds": 76.4
+}
