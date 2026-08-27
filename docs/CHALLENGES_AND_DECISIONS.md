@@ -158,6 +158,56 @@ documentation in the README and `.env.example`, which previously
 
 ---
 
+## Challenge 7: Hugging Face requiring a paid plan to create Gradio Spaces
+
+The original plan (and the project spec) called for a Hugging Face Space
+running the Gradio app. Partway through deployment, it turned out Hugging
+Face now requires a **paid PRO plan** just to *create* a Gradio or Docker
+Space — the CPU Basic hardware itself is still free once created, but
+Space creation itself is gated to paid accounts. Only Static Spaces (plain
+HTML/CSS/JS, no Python backend) remain free to create for everyone.
+
+**The decision:** rather than asking for a paid upgrade or dropping the
+public-demo requirement, the app was rebuilt as `webapp/` — a genuine 1:1
+port of `app/app.py`'s functionality into vanilla HTML/CSS/JS. This was
+viable specifically because the app's actual runtime logic is simple
+(filter and display two pre-generated JSON files); nothing about it
+required a Python backend — Gradio was just the framework used to build
+the first version quickly. The static rebuild deploys free to both a
+Hugging Face Static Space and GitHub Pages, and needed no changes to the
+pipeline or the underlying dataset — only the presentation layer changed.
+
+**A bug this surfaced along the way:** the first static build loaded
+Chart.js from a CDN (`cdnjs.cloudflare.com`). During testing in a
+network-restricted environment, that request was blocked — which exposed
+a real bug, not just a testing inconvenience: the resulting
+`ReferenceError` propagated up through the app's initialization sequence
+and crashed the *entire* app, not just the Dataset Stats tab. Any visitor
+with an ad-blocker or a restrictive corporate network would have hit the
+same failure in production. Fixed two ways: Chart.js is now vendored
+locally (`webapp/vendor/chart.umd.js`, no CDN dependency at all), and
+`setupStatsTab()` independently checks for Chart's availability and
+degrades to a plain text message if it's ever missing, so a charting
+failure can no longer take down search, filtering, or the relationship
+explorer. This was caught by an automated headless-browser test
+(Playwright) run against the static build before shipping it — worth
+noting as a case where testing the actual rendered page, not just checking
+JS syntax, caught a defect that code review alone likely would have
+missed.
+
+**What actually got deployed:** rather than switching to the static
+build, the Gradio app ended up deployed on **Render's** free tier instead
+— Render runs Python web services on a free plan with no payment gate,
+unlike Hugging Face's Gradio Spaces. This meant zero code changes beyond
+wiring `demo.launch()` to Render's expected host (`0.0.0.0`) and dynamic
+`PORT` environment variable. The static `webapp/` build still exists in
+the repo as a free, zero-server alternative (and remains the right choice
+if Render's cold-start delay on the free tier — 30–60 seconds after
+inactivity — is undesirable), but wasn't the path actually used for the
+live demo.
+
+---
+
 ## Design decisions that turned out to matter more than expected
 
 - **Deterministic UUIDs** (`uuid5` from entity_type + normalized URL) —

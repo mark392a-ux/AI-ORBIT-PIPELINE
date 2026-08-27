@@ -1,5 +1,10 @@
 # AI Orbit — Data Ingestion Pipeline
 
+**🔴 Live demo:** [ai-orbit-pipeline-6482.onrender.com](https://ai-orbit-pipeline-6482.onrender.com)
+*(Gradio app, deployed on Render. Note: Render's free tier spins the
+service down after periods of inactivity, so the first load after a while
+can take 30–60 seconds to wake back up — that's expected, not a bug.)*
+
 A modular, API-first pipeline that aggregates, cleans, normalizes, deduplicates,
 classifies, and cross-links real data from across the AI ecosystem into a single
 structured dataset — plus a Gradio app to browse it.
@@ -24,8 +29,8 @@ data/quality_report.json   # coverage breakdown by type / category / source
   relationship graphs, rate limiting, entity-resolution edge cases) and how
   each was diagnosed and fixed.
 - [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — step-by-step instructions
-  for pushing this to GitHub and deploying the demo app to Hugging Face
-  Spaces.
+  for pushing this to GitHub and deploying the demo app (Render, Hugging
+  Face Static Space, or Hugging Face Gradio Space with PRO).
 
 ---
 
@@ -231,12 +236,23 @@ relevant): `model_metadata`, `repository_metadata`, `mcp_metadata`,
 
 ## 7. The demo app
 
-`app/app.py` is a single-file Gradio app with a "mission control" visual
-identity (dark space palette, teal accent, monospace stat readouts) and
-three tabs:
+There are **two functionally identical builds** of the demo app — pick
+based on where you want to deploy:
+
+- **`webapp/`** — a static HTML/CSS/JS build with zero dependencies beyond
+  a vendored copy of Chart.js. No server, no Python runtime, deploys free
+  to a Hugging Face **Static Space** or GitHub Pages. **This is the
+  recommended version** — see [Challenge 7](docs/CHALLENGES_AND_DECISIONS.md#challenge-7-hugging-face-requiring-a-paid-plan-to-create-gradio-spaces)
+  in the challenges doc for why.
+- **`app/app.py`** — the original single-file Gradio app. Identical
+  features, but Hugging Face now requires a paid PRO plan to *create* a
+  Gradio Space (the free CPU Basic hardware only kicks in after that).
+
+Both share the same "mission control" visual identity (dark space
+palette, teal accent, monospace stat readouts) and three tabs:
 
 - **Browse & Search** — free-text search + category/type filters over a live
-  table (now showing each entity's relationship count); click a row for full
+  table (showing each entity's relationship count); click a row for full
   entity detail including specialized metadata.
 - **Relationship Explorer** — pick any entity, see every incoming and
   outgoing relationship with its confidence score and evidence string.
@@ -245,14 +261,14 @@ three tabs:
   from real text-mention evidence are inherently sparse — most entities
   have few or no detected links, and picking one at random used to make
   the tab look broken. If you do land on an unconnected entity, the app
-  now shows a clear explanation and points you at well-connected
-  alternatives instead of a blank table.
-- **Dataset Stats** — real bar charts (not just tables) for entities by
-  type, by source, and relationships by predicate, plus stat cards up top.
+  shows a clear explanation and points you at well-connected alternatives
+  (clickable, in the static build) instead of a blank table.
+- **Dataset Stats** — real bar charts for entities by type, by source, and
+  relationships by predicate, plus stat cards up top.
 
-It reads only the static `data/entities.json` / `data/relationships.json` —
-no external API calls at request time, no login, and it's fast even on
-Spaces' free CPU tier.
+Both read only the static `data/entities.json` / `data/relationships.json`
+— no external API calls at request time, no login required, and both are
+fast even on free hosting tiers.
 
 ### Why the Relationship Explorer looked empty, and what changed
 
@@ -282,15 +298,18 @@ also changed to make that sparsity legible instead of confusing (see above).
 
 ---
 
-## 8. Deploying to GitHub & Hugging Face Spaces
+## 8. Deploying to GitHub, Render, and Hugging Face
 
-Full step-by-step instructions (including a Space README template, a
-troubleshooting section, and how to refresh the live dataset later) live in
-[`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md). Short version: push this
-project to a GitHub repo as-is; for the Hugging Face Space, create a
-separate Space repo with the Gradio SDK, copy `app/app.py` to its root
-(adjusting one `DATA_DIR` path), copy `data/entities.json` and
-`data/relationships.json` alongside it, copy `requirements.txt`, and push.
+The live demo linked at the top of this README runs the Gradio app
+(`app/app.py`) on **Render's free tier** — this sidesteps Hugging Face's
+requirement of a paid PRO plan to create a Gradio Space, while keeping the
+app itself completely unchanged.
+
+Full step-by-step instructions for all deployment options (Render, a free
+Hugging Face Static Space running the `webapp/` build, the paid Hugging
+Face Gradio Space route, a GitHub Actions workflow for GitHub Pages, and a
+troubleshooting section) live in
+[`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
 ---
 
