@@ -1,0 +1,634 @@
+[
+  {
+    "id": "5fab89f0-21b5-5f49-8b28-e0385e8e9b94",
+    "source_id": "46a55093-10f3-5bfa-af9e-9df9f88e3f7a",
+    "predicate": "provides",
+    "target_id": "0769f260-4ea2-54b1-b9f1-b159516a8e15",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'Qwen' matches company 'Qwen'"
+  },
+  {
+    "id": "d1c92322-b367-5aaa-b8c4-c99f427afc6e",
+    "source_id": "56ff3ab5-a50b-50bf-bc52-ac1676afe3b1",
+    "predicate": "provides",
+    "target_id": "14f47737-3698-5978-8145-1a784e9b5eb1",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'deepseek-ai' matches company 'DeepSeek'"
+  },
+  {
+    "id": "33510e42-28bf-59fc-9d39-e906d00b5ade",
+    "source_id": "56ff3ab5-a50b-50bf-bc52-ac1676afe3b1",
+    "predicate": "provides",
+    "target_id": "a2f4b109-e338-567e-8ded-283d0f1fbdd8",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'deepseek-ai' matches company 'DeepSeek'"
+  },
+  {
+    "id": "1e316dd7-82eb-5a3f-ba09-d917602396cf",
+    "source_id": "56ff3ab5-a50b-50bf-bc52-ac1676afe3b1",
+    "predicate": "provides",
+    "target_id": "ddbbddf5-6a52-51da-8246-d9d465b71c80",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'deepseek-ai' matches company 'DeepSeek'"
+  },
+  {
+    "id": "61b82b37-295e-5655-9284-59a302fb8437",
+    "source_id": "46a55093-10f3-5bfa-af9e-9df9f88e3f7a",
+    "predicate": "provides",
+    "target_id": "3a21d355-a8d4-53ab-a956-6942740b8e39",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'Qwen' matches company 'Qwen'"
+  },
+  {
+    "id": "cd033640-d075-5ceb-970b-04feb1f5dde8",
+    "source_id": "10686d96-f312-55ec-8633-3a9db0d681ad",
+    "predicate": "provides",
+    "target_id": "06bce757-063b-5541-abab-ba79dbb166f8",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'black-forest-labs' matches company 'Black Forest Labs'"
+  },
+  {
+    "id": "2e218151-95c4-567c-980d-910f00de1d77",
+    "source_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "predicate": "provides",
+    "target_id": "51b9514b-b3bd-5811-a9f9-0bef7febe9ff",
+    "confidence": 0.95,
+    "evidence": "Model provider field 'openai' matches company 'OpenAI'"
+  },
+  {
+    "id": "2fa35dbd-64cb-57aa-a590-d1e7a7b940fe",
+    "source_id": "bb2524aa-33a6-5bbc-82b2-9ec670fdf5a6",
+    "predicate": "develops",
+    "target_id": "fcb55846-aa92-5170-a018-ef11e112cfd4",
+    "confidence": 0.7,
+    "evidence": "Repository owner 'f' matches company 'Hugging Face'"
+  },
+  {
+    "id": "7f05b5ec-0f21-5154-af00-3f34a3ba309f",
+    "source_id": "d8b22f01-f218-5c9c-9436-28825265a006",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "8fa49b22-6fe0-5ffa-b6a1-093949f6aaaf",
+    "source_id": "311e0382-915e-5d5a-878d-1b5f4a405e5e",
+    "predicate": "mentions",
+    "target_id": "0ad4ec92-f682-5ac2-93d2-ff015ffdc843",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'Stability AI'"
+  },
+  {
+    "id": "1e5ad14c-059e-59d1-87c0-7d439ad29e0d",
+    "source_id": "6f3a441a-efcf-5dc1-a686-745fb59f4867",
+    "predicate": "mentions",
+    "target_id": "d8b5817c-94f8-5c9f-9a82-49df4adbe039",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'Anthropic'"
+  },
+  {
+    "id": "f69985d5-7d2b-58ea-9684-d6270d5ca4f8",
+    "source_id": "442c44eb-9418-58f4-a317-c30f2cf412ec",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "84370d14-6db7-5f76-b030-490a6034d57d",
+    "source_id": "eb4b5813-115c-57bd-8685-cb8a2c703d05",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "f807aa76-dad4-5525-bc15-5e305651e510",
+    "source_id": "7c82cbf3-b97d-5858-87d0-4912b4148cef",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "5278db98-3423-561a-b321-8ece3b1fcfe6",
+    "source_id": "448ddcd2-10ab-5841-9691-cbe8dd61f0b5",
+    "predicate": "mentions",
+    "target_id": "bb2524aa-33a6-5bbc-82b2-9ec670fdf5a6",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'Hugging Face'"
+  },
+  {
+    "id": "da495502-ef97-562c-a442-1c8095cc8340",
+    "source_id": "8afb559c-56d0-5f0b-b4df-3f021f8bfd75",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "2693a9c3-9d97-5c5e-b7c3-19490ac40caa",
+    "source_id": "8afb559c-56d0-5f0b-b4df-3f021f8bfd75",
+    "predicate": "mentions",
+    "target_id": "d8b5817c-94f8-5c9f-9a82-49df4adbe039",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'Anthropic'"
+  },
+  {
+    "id": "9792cb00-8a66-57b7-8346-a364ca05ae90",
+    "source_id": "05fa5dcd-b5f6-5bea-b092-e85743c42f14",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'OpenAI'"
+  },
+  {
+    "id": "2da91ed7-e1eb-5134-bc99-438a804d3bb8",
+    "source_id": "d6de6b5c-1afa-5244-b4e2-bc7d095564a1",
+    "predicate": "mentions",
+    "target_id": "d8b5817c-94f8-5c9f-9a82-49df4adbe039",
+    "confidence": 0.8,
+    "evidence": "News text mentions company 'Anthropic'"
+  },
+  {
+    "id": "e1660758-858f-5c8b-b92e-4286c3eaed99",
+    "source_id": "e53fd128-16c3-5f75-9fdf-34311a2947d1",
+    "predicate": "mentions",
+    "target_id": "4c059276-01a3-5906-b503-351ca269ac7a",
+    "confidence": 0.7,
+    "evidence": "Video text mentions company 'Boston Dynamics'"
+  },
+  {
+    "id": "71724553-cbf6-5708-b483-7bef3e8e7604",
+    "source_id": "0cfbe1c7-9bd2-5515-8535-e1bcda195480",
+    "predicate": "mentions",
+    "target_id": "4c059276-01a3-5906-b503-351ca269ac7a",
+    "confidence": 0.7,
+    "evidence": "Video text mentions company 'Boston Dynamics'"
+  },
+  {
+    "id": "22055f13-ea56-5c79-9e1b-efabd4b5f1b3",
+    "source_id": "5d14a869-ac97-5b24-a029-8a57ccdbfdd4",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'OpenAI'"
+  },
+  {
+    "id": "21fcab41-9e11-5e97-8018-775be8502724",
+    "source_id": "305b9828-75c6-56b5-a27f-72861e683955",
+    "predicate": "mentions",
+    "target_id": "56ff3ab5-a50b-50bf-bc52-ac1676afe3b1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'DeepSeek'"
+  },
+  {
+    "id": "f86c9c3b-3444-5c34-bfc4-dd8d50183f1f",
+    "source_id": "052f407f-406b-5a1f-b132-2e326a0cf755",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'OpenAI'"
+  },
+  {
+    "id": "5b87ff01-37e7-5efc-976e-3e45303326c2",
+    "source_id": "052f407f-406b-5a1f-b132-2e326a0cf755",
+    "predicate": "mentions",
+    "target_id": "d8b5817c-94f8-5c9f-9a82-49df4adbe039",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'Anthropic'"
+  },
+  {
+    "id": "32e1562d-b276-57ae-b2e7-269bb9831465",
+    "source_id": "caf62ae2-7114-5f65-abff-a433ec8ea202",
+    "predicate": "mentions",
+    "target_id": "56ff3ab5-a50b-50bf-bc52-ac1676afe3b1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'DeepSeek'"
+  },
+  {
+    "id": "4066ae21-8253-52fd-bbf8-bd93e15f5249",
+    "source_id": "e3cfd352-2b4a-58b1-a5bc-3e975155d0ae",
+    "predicate": "mentions",
+    "target_id": "7b6166e2-7e18-5521-91af-534084451773",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'Mistral AI'"
+  },
+  {
+    "id": "d5a713b6-cb76-5022-ad24-e245f3af9de7",
+    "source_id": "0add5d87-04c1-5c8f-8e3b-e68884d83fa5",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'OpenAI'"
+  },
+  {
+    "id": "c0b8cf69-3c65-56d0-a910-079c9b3d28ca",
+    "source_id": "96fec691-2209-54f4-b1a4-5cb0af486313",
+    "predicate": "mentions",
+    "target_id": "cdcecf3c-4e03-5805-aca6-8326f191fbd1",
+    "confidence": 0.6,
+    "evidence": "Repository text mentions company 'OpenAI'"
+  },
+  {
+    "id": "b06ac6ef-69f7-51b1-b163-7d0af3dfa39e",
+    "source_id": "243f38dc-1e9c-51b5-80d5-7f0f4de4f0b1",
+    "predicate": "solves",
+    "target_id": "c8dbfb0d-2259-5763-9fae-6d37d76552b4",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'text-to-speech' matches task 'Text-to-Speech'"
+  },
+  {
+    "id": "f3c9445e-d4e8-57a9-b011-fb486a9a6618",
+    "source_id": "de0c18dd-8489-5de6-b979-45a1c153f0bd",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "a2e75069-ed72-5eb9-ba3a-9c1cdb3425ce",
+    "source_id": "25aaf022-111b-5409-8d22-1a3ebee09120",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "6d198d8a-5474-5089-b521-66127b439f4d",
+    "source_id": "a839353f-a2d9-5a5f-bd51-889a9937528f",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "205535b6-35d6-5d7d-90d0-85a2b0226bec",
+    "source_id": "a839353f-a2d9-5a5f-bd51-889a9937528f",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "d3534a09-8391-5431-96e0-cbbe276321ab",
+    "source_id": "d91213b4-d776-5c72-bc2c-66d3c72ee73b",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "996c42eb-fe91-59d2-9cf2-32aed580cff1",
+    "source_id": "1749d7c7-0550-5d06-a2f0-1b7667abe140",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "23ea6725-5f02-539a-aa3b-b4ec36dfb13c",
+    "source_id": "30661aaa-e74f-5015-900b-06951fa05c6a",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "3464841f-c5cf-54f5-a501-e47c4f7bbe4c",
+    "source_id": "143fdd15-6e2d-5311-a539-c3d9b24a9e25",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "6512b583-5d5b-5d28-9e32-afc6ca68633f",
+    "source_id": "32ea694f-deef-56bd-837b-e5f4b0a893a6",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "7c0b5993-10f5-54f6-b462-7770cee31676",
+    "source_id": "e02d6d11-fd83-5ab1-b9b7-2ddd60779379",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "1f167cf7-abd1-5d8a-9407-150e0d1c83fd",
+    "source_id": "592fb217-830f-5c28-838b-68445224b03d",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "a5c29ba9-dfa7-512c-920b-1e24dd3c32ec",
+    "source_id": "f42a40d5-b8e6-5be5-82ad-6da97a5e049f",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "da1c73ac-7c40-55e2-ba0b-9efef4d44088",
+    "source_id": "f42a40d5-b8e6-5be5-82ad-6da97a5e049f",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "24dbdbb6-212b-5dd2-a21d-48abfd250e8e",
+    "source_id": "fc5cffd2-5e2f-5fd0-8e34-b0a44f48ef80",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "822463ec-eb47-5bb3-a033-641e31e0b178",
+    "source_id": "0cdb6a40-35c0-52e0-9694-0bb3abe2ad04",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "2344716b-808d-58a4-be5e-33af8d999148",
+    "source_id": "6f23c318-6898-5604-aae4-70b8b671cb0f",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "3bcd3166-2360-5ad5-a7b0-5bfb8bc84d06",
+    "source_id": "6f23c318-6898-5604-aae4-70b8b671cb0f",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "d947dfdd-2018-5f86-a361-f9ec368c7726",
+    "source_id": "eabb4777-a591-5a5f-a2a1-546dec737dc1",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "0876c6ba-aa1e-53e6-9cf2-b00a2289c59d",
+    "source_id": "71e9d994-6ef4-583d-8d0d-260220b5495e",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "4f400e20-85ce-56f8-bf8d-06bd471f8eae",
+    "source_id": "71e9d994-6ef4-583d-8d0d-260220b5495e",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "8ca8d80f-21ee-5bb7-8722-eead43753976",
+    "source_id": "30d15eb0-6df2-5b13-99fa-07fb7ecca787",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "c19197ef-7654-524a-a698-fed1ba8feec7",
+    "source_id": "30d15eb0-6df2-5b13-99fa-07fb7ecca787",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.6,
+    "evidence": "Tool text mentions task 'Reinforcement Learning'"
+  },
+  {
+    "id": "158f6661-d4b8-51b4-b91d-608b43354118",
+    "source_id": "2ea15450-5e73-509b-ba50-626aecd9db57",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "e56fed19-f470-5082-a393-2312e4e8b866",
+    "source_id": "72d1ada6-744d-58de-8230-5149b7068d97",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "bfafff3e-14fc-5e57-ba6a-8630ae6ddecf",
+    "source_id": "3a78dafa-664d-5f1a-8b00-6affe27b2760",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "52732c82-8ee0-5bdf-a413-37ae8584dc1c",
+    "source_id": "4f09efd4-1759-5ad6-b357-22113bfce43e",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "921a167a-4a57-56bb-b6d6-14ccf4bc6183",
+    "source_id": "4cdfe785-9f19-5330-87ce-f4ed981f133e",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "87b83fe2-f4a3-582c-8159-95c505edef78",
+    "source_id": "9f752ca6-55cc-577c-acf8-3480a6b75ac4",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "55c48f00-a168-57d6-a608-e1442cf690bd",
+    "source_id": "b73b9163-fc83-518a-b0c7-4c4f35c7ab1a",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "bd7692d3-6291-58de-a27f-a497b643aa14",
+    "source_id": "7d43af2e-8dfb-5816-b2aa-00501622ac94",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "aad76517-654f-5ca8-9b33-5c4cfdc4bf1d",
+    "source_id": "b45d7e93-294c-5e43-8b28-4c551a110743",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "0fa37590-390d-53b7-9526-67d138480974",
+    "source_id": "aad0fad6-18c7-5ef5-8e53-45b18d7db100",
+    "predicate": "solves",
+    "target_id": "1c96cc8f-8d54-5547-90c5-7db15ef2a4b2",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'object-detection' matches task 'Object Detection'"
+  },
+  {
+    "id": "1faaca12-7ba5-5d38-8128-97ac2d0a47d1",
+    "source_id": "005b2b36-1269-5e35-9380-6f1f171ccf59",
+    "predicate": "solves",
+    "target_id": "1c96cc8f-8d54-5547-90c5-7db15ef2a4b2",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'object-detection' matches task 'Object Detection'"
+  },
+  {
+    "id": "a348fe55-998d-5fb4-9fde-7ae9def65d94",
+    "source_id": "92ad8404-2d4b-5aca-839d-7baaaf673151",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "6f462291-a4a3-58a0-959f-341551152c23",
+    "source_id": "92ad8404-2d4b-5aca-839d-7baaaf673151",
+    "predicate": "solves",
+    "target_id": "6d3881ee-280a-5225-9394-9c57cad810c8",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'reinforcement-learning' matches task 'Reinforcement Learning'"
+  },
+  {
+    "id": "00ab31da-ecae-5659-8149-70cc821eaf83",
+    "source_id": "59152925-adca-5cea-accd-6b6b8bc3870c",
+    "predicate": "solves",
+    "target_id": "1066af4b-39e8-596f-856a-2c654318857d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'image-classification' matches task 'Image Classification'"
+  },
+  {
+    "id": "714b4e4b-1367-5d73-85b9-a5c045b97cf9",
+    "source_id": "59152925-adca-5cea-accd-6b6b8bc3870c",
+    "predicate": "solves",
+    "target_id": "1c96cc8f-8d54-5547-90c5-7db15ef2a4b2",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'object-detection' matches task 'Object Detection'"
+  },
+  {
+    "id": "0cd2b57b-3b99-551c-b11e-d363b5995c4e",
+    "source_id": "2ad43ede-82c9-5324-ad0f-1bf8a901ecee",
+    "predicate": "solves",
+    "target_id": "c8dbfb0d-2259-5763-9fae-6d37d76552b4",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'text-to-speech' matches task 'Text-to-Speech'"
+  },
+  {
+    "id": "3ce92489-dd22-585b-aaac-0c29ae044d8c",
+    "source_id": "8295f9c6-1185-57a3-a017-759a2eebed25",
+    "predicate": "solves",
+    "target_id": "fa466c92-8d6c-5e35-bc0c-509ffa07766d",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'robotics' matches task 'Robotics'"
+  },
+  {
+    "id": "e3bc928e-0e75-5f61-b90c-c81e773b4cb6",
+    "source_id": "f210c716-1ea7-5dee-8eb1-5585721a37f4",
+    "predicate": "solves",
+    "target_id": "c8dbfb0d-2259-5763-9fae-6d37d76552b4",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'text-to-speech' matches task 'Text-to-Speech'"
+  },
+  {
+    "id": "f3773275-4988-5833-9ee9-88c3a7e73cbb",
+    "source_id": "7e1d3984-eaca-592c-a776-0fe5e89c8179",
+    "predicate": "solves",
+    "target_id": "c8dbfb0d-2259-5763-9fae-6d37d76552b4",
+    "confidence": 0.85,
+    "evidence": "Repository topic 'text-to-speech' matches task 'Text-to-Speech'"
+  },
+  {
+    "id": "fe9ed6e0-cdee-5f04-a34d-41998d4e875b",
+    "source_id": "322f5be2-938b-56e1-9f0a-fff312f21d65",
+    "predicate": "solves",
+    "target_id": "c8dbfb0d-2259-5763-9fae-6d37d76552b4",
+    "confidence": 0.6,
+    "evidence": "Tool text mentions task 'Text-to-Speech'"
+  },
+  {
+    "id": "48b22913-f937-5db6-8ef7-6ce8b9bee889",
+    "source_id": "14f47737-3698-5978-8145-1a784e9b5eb1",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  },
+  {
+    "id": "c9f6b77a-5f26-5730-936a-aca30cbadb41",
+    "source_id": "a2f4b109-e338-567e-8ded-283d0f1fbdd8",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  },
+  {
+    "id": "74c0551b-2d24-5036-845d-743e083cfc14",
+    "source_id": "ddbbddf5-6a52-51da-8246-d9d465b71c80",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  },
+  {
+    "id": "3d3774fb-1112-598f-abb7-deaf13d64aea",
+    "source_id": "3a21d355-a8d4-53ab-a956-6942740b8e39",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  },
+  {
+    "id": "03a25040-a52e-5741-9cfc-ff5369fa0099",
+    "source_id": "8e16edbd-d010-5710-acf6-c3ebfb8be449",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  },
+  {
+    "id": "51b9e2b1-7877-5525-b690-f7557c029209",
+    "source_id": "61638429-6178-5d49-910c-153279dde477",
+    "predicate": "solves",
+    "target_id": "2cf26170-a038-528d-ac43-0a0740ddf53a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'sentence-similarity' matches task 'Sentence Similarity'"
+  },
+  {
+    "id": "aa569996-5761-52da-b931-a57a81097580",
+    "source_id": "51b9514b-b3bd-5811-a9f9-0bef7febe9ff",
+    "predicate": "solves",
+    "target_id": "a0c63470-f046-5948-b3d7-25fede70a29a",
+    "confidence": 0.9,
+    "evidence": "Model pipeline tag 'text-generation' matches task 'Text Generation'"
+  }
+]

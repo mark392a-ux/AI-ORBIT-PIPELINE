@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Orbit — Ecosystem Explorer</title>
+<meta name="description" content="A structured, cross-referenced map of the AI ecosystem — entities and relationships ingested from GitHub, Hugging Face, YouTube, RSS news, and official company sites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="orbit-container">
+
+  <header class="orbit-header-block">
+    <div class="orbit-header">
+      <span class="orbit-icon">🛰️</span>
+      <span class="orbit-title">AI Orbit — Ecosystem Explorer</span>
+    </div>
+    <div class="orbit-tagline">
+      A structured, cross-referenced map of the AI ecosystem — ingested from GitHub,
+      Hugging Face, YouTube, RSS news, and official company sites.
+    </div>
+    <div class="orbit-stats-row" id="stat-cards"></div>
+  </header>
+
+  <nav class="orbit-tabs" id="tab-nav">
+    <button class="orbit-tab active" data-tab="browse">Browse &amp; Search</button>
+    <button class="orbit-tab" data-tab="relationships">Relationship Explorer</button>
+    <button class="orbit-tab" data-tab="stats">Dataset Stats</button>
+  </nav>
+
+  <!-- ============ Browse & Search ============ -->
+  <section class="orbit-panel active" id="panel-browse">
+    <div class="orbit-controls-row">
+      <div class="orbit-field orbit-field-grow">
+        <label for="search-input">Search</label>
+        <input type="text" id="search-input" placeholder="Search by name or description…">
+      </div>
+      <div class="orbit-field">
+        <label for="category-select">Category</label>
+        <select id="category-select"></select>
+      </div>
+      <div class="orbit-field">
+        <label for="type-select">Entity type</label>
+        <select id="type-select"></select>
+      </div>
+    </div>
+
+    <p class="orbit-result-count" id="result-count"></p>
+
+    <div class="orbit-table-wrap">
+      <table class="orbit-table" id="results-table">
+        <thead>
+          <tr>
+            <th>Name</th><th>Type</th><th>Categories</th><th>Links</th><th>Source</th><th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="results-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="orbit-detail-panel" id="detail-panel">
+      <p class="orbit-dim">Select a row above to see full entity details.</p>
+    </div>
+  </section>
+
+  <!-- ============ Relationship Explorer ============ -->
+  <section class="orbit-panel" id="panel-relationships">
+    <p class="orbit-dim">
+      Pick any entity to see everything it's connected to, with the evidence behind each link.
+      Sorted so the most-connected entities appear first — those are the best starting points.
+    </p>
+
+    <div class="orbit-field orbit-combobox-field">
+      <label for="entity-combobox">Choose an entity</label>
+      <div class="orbit-combobox">
+        <input type="text" id="entity-combobox" placeholder="Type to search entities…" autocomplete="off">
+        <ul class="orbit-combobox-list" id="entity-combobox-list"></ul>
+      </div>
+    </div>
+
+    <div id="rel-summary" class="orbit-rel-summary"></div>
+
+    <div class="orbit-table-wrap">
+      <table class="orbit-table" id="rel-table">
+        <thead>
+          <tr>
+            <th>Direction</th><th>Relationship</th><th>Other Entity</th><th>Other Type</th><th>Confidence</th><th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody id="rel-tbody"></tbody>
+      </table>
+    </div>
+
+    <div id="rel-empty-state"></div>
+  </section>
+
+  <!-- ============ Dataset Stats ============ -->
+  <section class="orbit-panel" id="panel-stats">
+    <h3>Entities by type</h3>
+    <div class="orbit-chart-wrap"><canvas id="chart-by-type"></canvas></div>
+
+    <h3>Entities by source</h3>
+    <div class="orbit-chart-wrap"><canvas id="chart-by-source"></canvas></div>
+
+    <h3>Relationships by predicate</h3>
+    <div class="orbit-chart-wrap"><canvas id="chart-by-predicate"></canvas></div>
+  </section>
+
+  <footer class="orbit-footer">
+    Built with the <a href="https://github.com/" target="_blank" rel="noopener">AI Orbit Data Ingestion Pipeline</a> —
+    static, client-side only, no server required.
+  </footer>
+
+</div>
+
+<script src="vendor/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

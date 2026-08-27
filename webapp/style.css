@@ -1,0 +1,263 @@
+:root {
+    --orbit-bg: #0B0E17;
+    --orbit-surface: #141926;
+    --orbit-surface-2: #1B2233;
+    --orbit-border: #262E42;
+    --orbit-text: #E8EAF2;
+    --orbit-text-dim: #8B92A8;
+    --orbit-accent: #4FD1C5;
+    --orbit-accent-dark: #0F3D38;
+    --orbit-amber: #F5A623;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--orbit-bg);
+    color: var(--orbit-text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.orbit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 20px 60px 20px;
+}
+
+/* --- Header --- */
+.orbit-header-block { margin-bottom: 8px; }
+.orbit-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+.orbit-icon { font-size: 26px; }
+.orbit-title { font-size: 26px; font-weight: 700; color: var(--orbit-text); }
+.orbit-tagline { color: var(--orbit-text-dim); font-size: 14px; margin-bottom: 18px; max-width: 900px; line-height: 1.5; }
+
+/* --- Stat card grid --- */
+.orbit-stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin: 4px 0 20px 0;
+}
+.orbit-stat-card {
+    background: var(--orbit-surface);
+    border: 1px solid var(--orbit-border);
+    border-radius: 10px;
+    padding: 14px 18px;
+}
+.orbit-stat-label {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--orbit-text-dim);
+    margin-bottom: 6px;
+}
+.orbit-stat-value {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--orbit-accent);
+    line-height: 1.1;
+}
+
+/* --- Tabs --- */
+.orbit-tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--orbit-border);
+    margin-bottom: 22px;
+}
+.orbit-tab {
+    background: none;
+    border: none;
+    color: var(--orbit-text-dim);
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+.orbit-tab:hover { color: var(--orbit-text); }
+.orbit-tab.active {
+    color: var(--orbit-accent);
+    border-bottom-color: var(--orbit-accent);
+    font-weight: 500;
+}
+
+/* --- Panels --- */
+.orbit-panel { display: none; }
+.orbit-panel.active { display: block; }
+
+/* --- Form controls --- */
+.orbit-controls-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+.orbit-field { display: flex; flex-direction: column; gap: 6px; min-width: 200px; }
+.orbit-field-grow { flex: 2; }
+.orbit-field label {
+    font-size: 12px;
+    color: var(--orbit-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.orbit-field input[type="text"],
+.orbit-field select {
+    background: var(--orbit-surface-2);
+    border: 1px solid var(--orbit-border);
+    color: var(--orbit-text);
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.orbit-field input[type="text"]:focus,
+.orbit-field select:focus {
+    outline: none;
+    border-color: var(--orbit-accent);
+}
+
+.orbit-result-count { color: var(--orbit-text-dim); font-size: 14px; margin: 10px 0; }
+.orbit-dim { color: var(--orbit-text-dim); }
+
+/* --- Table --- */
+.orbit-table-wrap {
+    background: var(--orbit-surface);
+    border: 1px solid var(--orbit-border);
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 480px;
+    margin-bottom: 18px;
+}
+.orbit-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.orbit-table th {
+    position: sticky;
+    top: 0;
+    background: var(--orbit-surface-2);
+    text-align: left;
+    padding: 10px 14px;
+    color: var(--orbit-text-dim);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--orbit-border);
+}
+.orbit-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--orbit-border);
+    vertical-align: top;
+}
+.orbit-table tbody tr:hover { background: var(--orbit-surface-2); cursor: pointer; }
+.orbit-table td a { color: var(--orbit-accent); text-decoration: none; word-break: break-all; }
+.orbit-table td a:hover { text-decoration: underline; }
+
+/* --- Detail panel --- */
+.orbit-detail-panel {
+    background: var(--orbit-surface);
+    border: 1px solid var(--orbit-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    line-height: 1.6;
+    font-size: 14.5px;
+}
+.orbit-detail-panel h3 { margin-top: 0; color: var(--orbit-text); }
+.orbit-detail-panel a { color: var(--orbit-accent); }
+.orbit-detail-panel ul { margin: 6px 0 12px 0; padding-left: 20px; }
+
+/* --- Badge --- */
+.orbit-badge {
+    display: inline-block;
+    background: var(--orbit-accent-dark);
+    color: var(--orbit-accent);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 8px;
+}
+
+/* --- Combobox (searchable entity picker) --- */
+.orbit-combobox-field { max-width: 480px; margin-bottom: 16px; }
+.orbit-combobox { position: relative; }
+.orbit-combobox input {
+    width: 100%;
+    background: var(--orbit-surface-2);
+    border: 1px solid var(--orbit-border);
+    color: var(--orbit-text);
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 14px;
+}
+.orbit-combobox input:focus { outline: none; border-color: var(--orbit-accent); }
+.orbit-combobox-list {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    max-height: 280px;
+    overflow-y: auto;
+    background: var(--orbit-surface-2);
+    border: 1px solid var(--orbit-border);
+    border-radius: 8px;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+.orbit-combobox-list.open { display: block; }
+.orbit-combobox-list li {
+    padding: 8px 12px;
+    font-size: 13.5px;
+    cursor: pointer;
+}
+.orbit-combobox-list li:hover,
+.orbit-combobox-list li.highlighted { background: var(--orbit-accent-dark); color: var(--orbit-accent); }
+
+/* --- Relationship summary --- */
+.orbit-rel-summary { margin: 4px 0 14px 0; }
+.orbit-rel-summary h3 { margin: 0 0 4px 0; }
+
+/* --- Empty state --- */
+.orbit-empty-state {
+    background: var(--orbit-surface);
+    border: 1px dashed var(--orbit-border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    color: var(--orbit-text-dim);
+    font-size: 14px;
+    line-height: 1.6;
+}
+.orbit-empty-state b { color: var(--orbit-text); }
+.orbit-empty-state ul { margin: 8px 0 0 18px; padding: 0; }
+.orbit-empty-state li { cursor: pointer; }
+.orbit-empty-state li:hover { color: var(--orbit-accent); }
+
+/* --- Stats charts --- */
+.orbit-chart-wrap {
+    background: var(--orbit-surface);
+    border: 1px solid var(--orbit-border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 24px;
+    max-width: 900px;
+}
+
+/* --- Footer --- */
+.orbit-footer {
+    margin-top: 40px;
+    color: var(--orbit-text-dim);
+    font-size: 12.5px;
+    text-align: center;
+}
+.orbit-footer a { color: var(--orbit-accent); }
